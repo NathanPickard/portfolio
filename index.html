@@ -7,34 +7,44 @@
   <title>Nathan Pickard - Portfolio</title>
   <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
 </head>
 
-<body ng-app="Portfolio">
+<body ng-app="Portfolio" layout="column" ng-controller="NavController as ul">
 
-  <md-toolbar>
-    <md-button>Home
+  <md-toolbar layout="row">
+    <md-button class="menu" ng-click="ul.toggleList();" aria-label="Show Menu List" hide-gt-xs>
+      <md-icon md-svg-icon="menu"></md-icon>
     </md-button>
     <h1>Nathan Pickard</h1>
   </md-toolbar>
 
-<!--
   <div class="container" layout="row" flex>
-    <md-sidenav md-component-id="left">
-      <md-list>
-        <md-list-item>Hello</md-list-item>
+    <md-sidenav md-is-locked-open="$mdMedia('gt-xs')" class="md-whiteframe-4dp" md-component-id="left">
+      <md-list ng-click="ul.toggleList()">
+        <md-list-item ng-repeat="i in ul.navItems">
+          <md-button ng-click="ul.selectItem(i)"><md-icon md-svg-src="{{i.icon}}"></md-icon>{{i.title}}</md-button>
+        </md-list-item>
       </md-list>
     </md-sidenav>
+
+    <md-content id="content" flex>
+      <h2>{{ul.selected.title}}</h2>
+      <p>{{ul.selected.content}}</p>
+    </md-content>
+
   </div>
 
-  -->
-
-  <md-subheader>content</md-subheader>
+  <md-subheader>Subheader content will go here</md-subheader>
 
   <script src="node_modules/angular/angular.min.js"></script>
   <script src="node_modules/angular-animate/angular-animate.js"></script>
   <script src="node_modules/angular-aria/angular-aria.min.js"></script>
   <script src="node_modules/angular-material/angular-material.min.js"></script>
   <script src="app/app.js"></script>
+  <script src="NavItems.js"></script>
+  <script src="NavService.js"></script>
+  <script src="NavController.js"></script>
 
 </body>
 
