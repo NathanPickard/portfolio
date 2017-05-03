@@ -21,6 +21,10 @@
 
     function selectItem(navItem) {
       self.selected = angular.isNumber(navItem) ? $scope.navItems[navItem] : navItem;
+      if(self.selected === 1) {
+        
+
+      }
     }
 
   }

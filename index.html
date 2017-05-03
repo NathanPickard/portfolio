@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
 </head>
 
-<body ng-app="Portfolio" layout="column" ng-controller="NavController as ul" ng-controller="PortfolioController">
+<body ng-app="Portfolio" layout="column" ng-controller="NavController as ul">
 
   <md-toolbar layout="row">
     <md-button class="menu" ng-click="ul.toggleList();" aria-label="Show Nav List" hide-gt-xs>
@@ -31,44 +31,14 @@
 
 
     <md-content id="content" flex>
+
       <h2>{{ul.selected.title}}</h2>
       <p>{{ul.selected.content}}</p>
     </md-content>
 
   </div>
 
-  <div ng-controller="PortfolioController" ng-cloak>
-  <md-content class="md-padding">
-    <md-nav-bar
-      md-selected-nav-item="currentNavItem"
-      nav-bar-aria-label="navigation links">
-      <md-nav-item md-nav-click="goto('page1')" name="page1">
-        Page One
-      </md-nav-item>
-      <md-nav-item md-nav-click="goto('page2')" name="page2">
-        Page Two
-      </md-nav-item>
-      <md-nav-item md-nav-click="goto('page3')" name="page3">
-        Page Three
-      </md-nav-item>
-      <!-- these require actual routing with ui-router or ng-route, so they
-      won't work in the demo
-      <md-nav-item md-nav-href="#page4" name="page5">Page Four</md-nav-item>
-      <md-nav-item md-nav-sref="app.page5" name="page4">Page Five</md-nav-item>
-      You can also add options for the <code>ui-sref-opts</code> attribute.
-      <md-nav-item md-nav-sref="page6" sref-opts="{reload:true, notify:true}">
-        Page Six
-      </md-nav-item>
-      -->
-    </md-nav-bar>
-    <div class="ext-content">
-      External content for `<span>{{currentNavItem}}</span>`.
-    </div>
 
-    <md-checkbox ng-model="disableInkBar">Disable Ink Bar</md-checkbox>
-
-  </md-content>
-</div>
 
   <md-subheader>Subheader content will go here</md-subheader>
 
@@ -76,6 +46,7 @@
   <script src="node_modules/angular-animate/angular-animate.js"></script>
   <script src="node_modules/angular-aria/angular-aria.min.js"></script>
   <script src="node_modules/angular-material/angular-material.min.js"></script>
+  <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
   <script src="app/app.js"></script>
   <script src="NavItems.js"></script>
   <script src="NavService.js"></script>
