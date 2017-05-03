@@ -9,5 +9,5 @@ angular.module('Portfolio', ['ngMaterial', 'navItems'])
 
     $mdThemingProvider.theme('default')
       .primaryPalette('blue')
-      .accentPalette('green');
+      .accentPalette('cyan');
   });
