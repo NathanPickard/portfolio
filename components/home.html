@@ -1,23 +1,33 @@
-<md-sidenav class="md-whiteframe-4dp" md-component-id="left" md-is-locked-open="$mdMedia('gt-xs')">
-  <md-toolbar md-scroll-shrink>
-    <md-button class="menu" ng-click""
+<div layout="column">
+
+  <md-toolbar layout="row">
+    <md-button class="menu" aria-label="Show Navigation" hide-gt-sx>
+      <md-icon md-svg-icon="menu"></md-icon>
+    </md-button>
     <div class="md-toolbar-tools">
       <h1>Nathan Pickard</h1>
     </div>
   </md-toolbar>
-  <md-content role="navigation">
-    <ul class="side-nav">
-      <li ng-repeat="section in vm.nav.sections" class="parent-list-item" ng-class="{'parentActive' : vm.isSectionSelected(section)}">
-        <h2 class="nav-heading" ng-if="section.type === 'heading'" id="heading_{{ section.name | nospace }}">
-          {{section}}
-        </h2>
-        <nav-link section="section" ng-if="section.type === 'link'"></nav-link>
-        <nav-toggle section="section" ng-if="section.type === 'toggle'"></nav-toggle>
-      </li>
-    </ul>
 
+  <div class="container" layout="row" flex>
+    <md-sidenav class="md-whiteframe-4dp" md-component-id="left" md-is-locked-open="$mdMedia('gt-xs')">
+      <md-content role="navigation">
+        <ul class="side-nav">
+          <li ng-repeat="section in vm.nav.sections" class="parent-list-item" ng-class="{'parentActive' : vm.isSectionSelected(section)}">
+            <h2 class="nav-heading" ng-if="section.type === 'heading'" id="heading_{{ section.name | nospace }}">
+              {{section}}
+            </h2>
+            <nav-link section="section" ng-if="section.type === 'link'"></nav-link>
+            <nav-toggle section="section" ng-if="section.type === 'toggle'"></nav-toggle>
+          </li>
+        </ul>
+
+      </md-content>
+    </md-sidenav>
+
+  <md-content flex>
+    <ui-view name="content"></ui-view>
   </md-content>
-</md-sidenav>
-<md-content flex>
-  <ui-view name="content"></ui-view>
-</md-content>
+  </div>
+
+</div>
