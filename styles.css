@@ -1,11 +1,11 @@
 html, body {
   font-size: 14px;
-  height: 100%;
+  /*height: 100%;
   margin: 0px;
-  padding: 0px;
+  padding: 0px;*/
 }
 
-md-sidenav {
+/*md-sidenav {
     max-width: 200px;
     max-height: 300px;
     background-color: lightgray;
@@ -14,26 +14,53 @@ md-sidenav {
 md-list-item > button {
   width: 100%;
   text-align:left !important;
-}
+}*/
 
-#content {
+/*#content {
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 5px;
+}*/
+
+.fill-height {
+  display: flex;
+  flex: 1;
+  min-height: 90%;
 }
 
-.navItem {
-  position: relative;
-  width: 64px;
-  height: 64px;
-  /*border: 1px solid #ddd;*/
-  /*border-radius: 10%;*/
-  display: inline-block;
-  overflow: hidden;
-  margin: 0px;
-  vertical-align: middle;
-  zoom: 0.70;
-  transform: translateZ(0);
-  -webkit-transform: scale(0.70);
-  -moz-transform:scale(0.70);
+.fill-height > div {
+  min-height: 100%;
+  display: flex;
 }
+
+.md-toolbar-tools {
+  font-size: 35px;
+}
+
+/*.nav-toggle-list {
+  font-size: 4px;
+}*/
+
+.side-nav .md-button {
+  text-align: left;
+  font-size: 20px;
+}
+
+.side-nav .md-button > ul {
+  
+  font-size: px;
+}
+
+/*.side-nav .md-button > a {
+  font-size: 5px;
+}*/
+
+
+#docs-nav-Portfolio li:first-child  {
+  color: #e6ee9c;
+}
+
+#docs-nav-Portfolio li:nth-child(2)  {
+  color: #72d572;
+}
+
