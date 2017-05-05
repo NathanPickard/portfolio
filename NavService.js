@@ -30,12 +30,14 @@
 
       sections.push({
         name: 'About',
-        type: 'link'
+        type: 'link',
+        state: 'home.about'
       })
 
       sections.push({
         name: 'Contact',
-        type: 'link'
+        type: 'link',
+        state: 'home.contact'
       });
 
       var self;

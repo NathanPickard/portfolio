@@ -57,6 +57,28 @@
               }
             }
           })
+          .state('home.about', {
+            url: 'about',
+            views: {
+              'content@home': {
+                templateUrl: 'components/about.html'
+              }
+            }
+          })
+          .state('home.contact', {
+            url: 'contact',
+            views: {
+              'content@home': {
+                templateUrl: 'components/contact.html'
+              }
+            }
+          })
+          //   views: {
+          //     // 'content@home': {
+          //     // templateUrl: 'components/about.html'
+          //     // }
+          //   }
+          // })
       }])
     //take all whitespace out of string
     .filter('nospace', function () {

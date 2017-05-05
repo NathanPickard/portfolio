@@ -18,13 +18,17 @@
         vm.toggleOpen = toggleOpen;
         vm.autoFocusContent = false;
         vm.nav = nav;
+        // vm.toggleList = toggleNavList;
 
         vm.status = {
           isFirstOpen: true,
           isFirstDisabled: false
         };
 
-        
+        // function toggleNavList() {
+        //   $mdSidenav.toggle();
+        // }
+
 
 
         function isOpen(section) {

@@ -1,7 +1,7 @@
 html, body {
   font-size: 14px;
   /*height: 100%;
-  margin: 0px;
+  /*margin: 0px;
   padding: 0px;*/
 }
 
@@ -23,15 +23,15 @@ md-list-item > button {
 }*/
 
 .fill-height {
-  display: flex;
-  flex: 1;
+  /*display: flex;*/
+  /*flex: 1;*/
   min-height: 90%;
 }
 
-.fill-height > div {
-  min-height: 100%;
-  display: flex;
-}
+/*.fill-height > div {*/
+  /*min-height: 100%;*/
+  /*display: flex;*/
+/*}*/
 
 .md-toolbar-tools {
   font-size: 35px;
@@ -46,6 +46,11 @@ md-list-item > button {
   font-size: 20px;
 }
 
+.md-button-toggle .md-toggle-icon.toggled {
+  transform: rotateZ(180deg);
+  -webkit-transform: rotateZ(180deg);
+}
+
 /*.side-nav .md-button > ul {
   
   font-size: px;
@@ -57,10 +62,14 @@ md-list-item > button {
 
 
 #docs-nav-Portfolio li:first-child  {
-  color: #e6ee9c;
+  color: #dce775;
 }
 
 #docs-nav-Portfolio li:nth-child(2)  {
   color: #72d572;
+}
+
+#profile {
+  max-width: 250px;
 }
 
