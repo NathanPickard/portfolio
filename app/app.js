@@ -14,6 +14,7 @@
       $mdIconProvider.icon('about', './svg/047-stack.svg', 24);
       $mdIconProvider.icon('contact', './svg/006-pencil.svg', 24);
       $mdIconProvider.icon('menu', './svg/190-menu.svg', 24);
+      $mdIconProvider.icon('linkedin', './svg/458-linkedin.svg', 24);
 
       $mdThemingProvider.theme('default')
         .primaryPalette('blue')

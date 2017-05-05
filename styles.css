@@ -26,6 +26,7 @@ md-list-item > button {
   /*display: flex;*/
   /*flex: 1;*/
   min-height: 90%;
+  flex
 }
 
 /*.fill-height > div {*/
@@ -45,6 +46,11 @@ md-list-item > button {
   text-align: left;
   font-size: 20px;
 }
+
+.side-nav .md-button.active {
+  color: blue;
+}
+
 
 .md-button-toggle .md-toggle-icon.toggled {
   transform: rotateZ(180deg);
@@ -71,5 +77,9 @@ md-list-item > button {
 
 #profile {
   max-width: 250px;
+}
+
+#toolbar-top {
+  padding-left: 25px;
 }
 

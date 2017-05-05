@@ -20,7 +20,8 @@
         pages: [{
           name: 'Web Projects',
           type: 'link',
-          state: 'home.portfolio.webprojects'
+          state: 'home.portfolio.webprojects',
+          icon: ''
         }, {
           name: 'Android projects',
           type: 'link',
