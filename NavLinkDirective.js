@@ -6,6 +6,7 @@
       $templateCache.put('partials/nav-link.tmpl.html',
         '<md-button ng-class="{\'{{section.icon}}\' : true}" ui-sref-active="active" \n' +
         '  ui-sref="{{section.state}}" ng-click="focusSection()">\n' +
+        '  <md-icon md-svg-src={{section.icon}}></md-icon>\n' +
         '  {{section | humanizeDoc}}\n' +
         '  <span  class="md-visually-hidden "\n' +
         '    ng-if="isSelected()">\n' +

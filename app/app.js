@@ -11,15 +11,18 @@
 
       $mdIconProvider.icon('home', './svg/002-home2.svg', 24);
       $mdIconProvider.icon('portfolio', './svg/048-folder.svg', 24);
+      $mdIconProvider.icon('web', './svg/202-sphere.svg', 24);
+      $mdIconProvider.icon('android', './svg/449-android.svg', 24);
       $mdIconProvider.icon('about', './svg/047-stack.svg', 24);
       $mdIconProvider.icon('contact', './svg/006-pencil.svg', 24);
       $mdIconProvider.icon('menu', './svg/190-menu.svg', 24);
       $mdIconProvider.icon('linkedin', './svg/458-linkedin.svg', 24);
+      $mdIconProvider.icon('github', './svg/433-github.svg', 24);
+      $mdIconProvider.icon('twitter', './svg/407-twitter.svg', 24);
 
       $mdThemingProvider.theme('default')
         .primaryPalette('blue')
         .accentPalette('cyan');
-
     })
 
     .config(['$stateProvider', '$urlRouterProvider', '$logProvider',

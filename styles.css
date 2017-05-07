@@ -26,7 +26,6 @@ md-list-item > button {
   /*display: flex;*/
   /*flex: 1;*/
   min-height: 90%;
-  flex
 }
 
 /*.fill-height > div {*/
@@ -38,17 +37,36 @@ md-list-item > button {
   font-size: 35px;
 }
 
+/*.side-nav .md-button-toggle .md-button {
+  transition: transform .3s ease-in-out;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+}*/
+
 /*.nav-toggle-list {
   font-size: 4px;
 }*/
 
 .side-nav .md-button {
   text-align: left;
-  font-size: 20px;
+  font-size: 15px;
 }
+
+.side-nav .md-button > md-icon {
+  padding-right: 10px;
+  
+}
+
 
 .side-nav .md-button.active {
   color: blue;
+}
+
+.nav-toggle-list {
+  font-size:5px;
+}
+
+.externalLinks {
+  background-color: lightgray;
 }
 
 
@@ -66,8 +84,14 @@ md-list-item > button {
   font-size: 5px;
 }*/
 
+.aboutdiv {
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
 
 #docs-nav-Portfolio li:first-child  {
+  font-size: 5px;
   color: #dce775;
 }
 
@@ -82,4 +106,5 @@ md-list-item > button {
 #toolbar-top {
   padding-left: 25px;
 }
+
 

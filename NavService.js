@@ -11,34 +11,39 @@
       var sections = [{
         name: 'Home',
         state: 'home',
-        type: 'link'
+        type: 'link',
+        icon: 'home'
       }];
 
       sections.push({
         name: 'Portfolio',
         type: 'toggle',
+        icon: 'portfolio',
         pages: [{
           name: 'Web Projects',
           type: 'link',
           state: 'home.portfolio.webprojects',
-          icon: ''
+          icon: 'web'
         }, {
           name: 'Android projects',
           type: 'link',
-          state: 'home.portfolio.androidprojects'
+          state: 'home.portfolio.androidprojects',
+          icon: 'android'
         }]
       });
 
       sections.push({
         name: 'About',
         type: 'link',
-        state: 'home.about'
+        state: 'home.about',
+        icon: 'about'
       })
 
       sections.push({
         name: 'Contact',
         type: 'link',
-        state: 'home.contact'
+        state: 'home.contact',
+        icon: 'contact'
       });
 
       var self;

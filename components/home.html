@@ -1,11 +1,9 @@
-
-
-  <md-toolbar layout="row">
-    <md-button class="menu" aria-label="Show Navigation" hide-gt-xs>
-      <md-icon md-svg-icon="menu"></md-icon>
-    </md-button>
-    <div id="toolbar-top">
-      <h1>Nathan Pickard <span style="font-size: 15px">{Full-stack JavaScript Developer}<span</h1>
+<md-toolbar layout="row">
+  <md-button class="menu" aria-label="Show Navigation" hide-gt-xs>
+    <md-icon md-svg-icon="menu"></md-icon>
+  </md-button>
+  <div id="toolbar-top">
+    <h1>Nathan Pickard <span style="font-size: 15px">{Full-stack JavaScript Developer}<span</h1>
     </div>
   </md-toolbar>
 
@@ -13,6 +11,7 @@
 
   <div class="container" layout="row" flex>
     <md-sidenav class="md-whiteframe-4dp" md-component-id="left" md-is-locked-open="$mdMedia('gt-xs')">
+
       <md-content role="navigation">
         <ul class="side-nav">
           <li ng-repeat="section in vm.nav.sections" class="parent-list-item" ng-class="{'parentActive' : vm.isSectionSelected(section)}">
@@ -24,7 +23,20 @@
           </li>
         </ul>
 
+      <div class="externalLinks">
+        <md-button href="https://www.linkedin.com/in/nathanpickard/" target="_blank">
+          <md-icon md-svg-icon="linkedin" aria-label="Go to LinkedIn"></md-icon>
+        </md-button>
+        <md-button href="https://github.com/NathanPickard" target="_blank">
+          <md-icon md-svg-icon="github" aria-label="Go to GitHub"></md-icon>
+        </md-button>
+        <md-button href="https://twitter.com/NathanPickard" target="_blank">
+          <md-icon md-svg-icon="twitter" aria-label="Go to Twitter"></md-icon>
+        </md-button>
+      </div>
+
       </md-content>
+
     </md-sidenav>
 
   <md-content style="background-color: lightgray" flex>
