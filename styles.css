@@ -37,6 +37,10 @@ md-list-item > button {
   font-size: 35px;
 }
 
+.md-content ._md.flex {
+  padding-left: 30px;
+}
+
 /*.side-nav .md-button-toggle .md-button {
   transition: transform .3s ease-in-out;
   -webkit-transition: -webkit-transform .3s ease-in-out;
@@ -101,6 +105,10 @@ md-list-item > button {
 
 #profile {
   max-width: 250px;
+}
+
+#wikidiet {
+  max-width: 225px;
 }
 
 #toolbar-top {

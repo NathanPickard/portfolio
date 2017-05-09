@@ -1,4 +1,4 @@
-<p>Web projects go here!</p>
+<h2>JavaScript Web Applications</h2>
 
 <md-card>
   <md-card-header>
@@ -10,7 +10,7 @@
       <span class="md-subhead">Full-stack JavaScript, single page web application</span>
     </md-card-header-text>
   </md-card-header>
-  <img ng-src="iamge-source" class="md-card-image" alt="">
+  <img ng-src="image-source" class="md-card-image" alt="">
   <md-card-title>
     <md-card-title-text>
       <span class="md-headline">card-headline</span>
@@ -18,8 +18,8 @@
     </md-card-title-text>
   </md-card-title>
   <md-card-actions layout="" layout-align="start|center|end|space-around|space-between start|center|end|stretch">
-    <md-button>Action 1</md-button>
-    <md-button>Action 2</md-button>
+    <md-button>Website</md-button>
+    <md-button>GitHub</md-button>
     <md-card-icon-actions>
       <md-button class="button-class" aria-label="label">
         content
@@ -27,6 +27,83 @@
     </md-card-icon-actions>
   </md-card-actions>
   <md-card-content>
-      content
+    content
   </md-card-content>
 </md-card>
+
+<md-card>
+  <md-card-header>
+    <md-card-header-text>
+      <span class="md-title">WikiDiet</span>
+      <span class="md-subhead">Full-stack JavaScript, single page web application</span>
+    </md-card-header-text>
+  </md-card-header>
+  <img ng-src="./img/wikidiet.png" id="wikidiet" class="md-card-image" alt="">
+  <md-card-title>
+    <md-card-title-text>
+      <span class="md-headline">card-headline</span>
+      <span class="md-subhead">card-subheadline</span>
+    </md-card-title-text>
+  </md-card-title>
+  <md-card-actions layout="" layout-align="start|center|end|space-around|space-between start|center|end|stretch">
+    <md-button href="https://wikidiet.herokuapp.com/" target="_blank">Website</md-button>
+    <md-button href="https://github.com/FoodDudes/WikiDiet" target="_blank">GitHub</md-button>
+    <md-card-icon-actions>
+      <md-button class="button-class" aria-label="label">
+        content
+      </md-button>
+    </md-card-icon-actions>
+  </md-card-actions>
+  <md-card-content>
+    This SPA is designed to make tracking the foods you eat easy.
+      Enter, track, and report on food you eat daily!
+  </md-card-content>
+</md-card>
+
+
+
+  <div flex-xs flex-gt-xs="50" layout="column">
+    <md-card>
+      <img ng-src="{{imagePath}}" class="md-card-image" alt="">
+      <md-card-title>
+        <md-card-title-text>
+          <span class="md-headline">Action buttons</span>
+        </md-card-title-text>
+      </md-card-title>
+      <md-card-content>
+        <p>Content goes in here</p>
+      </md-card-content>
+      <md-card-actions layout="row" layout-align="end center">
+        <md-button>Action 1</md-button>
+        <md-button>Action 2</md-button>
+      </md-card-actions>
+    </md-card>
+  </div>
+
+
+
+<div flex-xs flex-gt-xs="50" layout="column">
+  <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">Card with image</span>
+        <span class="md-subhead">Large</span>
+      </md-card-title-text>
+      <md-card-title-media>
+        <div class="md-media-lg card-media"></div>
+      </md-card-title-media>
+    </md-card-title>
+    <md-card-actions layout="row" layout-align="end center">
+      <md-button>Action 1</md-button>
+      <md-button>Action 2</md-button>
+    </md-card-actions>
+  </md-card>
+  <md-card md-theme="{{ showDarkTheme ? 'dark-orange' : 'default' }}" md-theme-watch>
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">Card with image</span>
+        <span class="md-subhead">Extra Large</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content layout="row" layout-align="space-between">
+      <div class="md-media-xl card-media"></div>
