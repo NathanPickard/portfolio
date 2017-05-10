@@ -19,6 +19,7 @@
       $mdIconProvider.icon('linkedin', './svg/458-linkedin.svg', 24);
       $mdIconProvider.icon('github', './svg/433-github.svg', 24);
       $mdIconProvider.icon('twitter', './svg/407-twitter.svg', 24);
+      $mdIconProvider.icon('twitterWhite', './svg/Twitter_Social_Icon_White.svg', 24);
 
       $mdThemingProvider.theme('default')
         .primaryPalette('blue')

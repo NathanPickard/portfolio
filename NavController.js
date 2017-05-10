@@ -1,31 +1,44 @@
 (function () {
-  angular.module('navItems').controller('NavController', NavController)
+  angular.module('navCtrl', ['ngMaterial'])
+    .controller('NavCtrl', function ($scope, $timeout, $mdSidenav) {
+      $scope.toggleLeft = buildToggler('left');
 
-  function NavController(navService, $mdSidenav, $log) {
+      function buildToggler(componentId) {
+        return function() {
+          $mdSidenav(componentId).toggle();
+        };
+      }
+    })
+})
 
-    var self = this;
+// (function () {
+//   angular.module('navItems').controller('NavController', NavController)
 
-    self.selected = null;
-    self.navItems = [];
-    self.selectItem = selectItem;
-    // self.toggleList = toggleNavList;
+//   function NavController(navService, $mdSidenav, $log) {
 
-    navService.loadAllItems().then(function (navItems) {
-      self.navItems = [].concat(navItems);
-      self.selected = navItems[0];
-    });
+//     var self = this;
 
-    // function toggleNavList() {
-    //   $mdSidenav('left').toggle();
-    // }
+//     self.selected = null;
+//     self.navItems = [];
+//     self.selectItem = selectItem;
+//     // self.toggleList = toggleNavList;
 
-    function selectItem(navItem) {
-      self.selected = angular.isNumber(navItem) ? $scope.navItems[navItem] : navItem;
-      if(self.selected === 1) {
+//     navService.loadAllItems().then(function (navItems) {
+//       self.navItems = [].concat(navItems);
+//       self.selected = navItems[0];
+//     });
+
+//     // function toggleNavList() {
+//     //   $mdSidenav('left').toggle();
+//     // }
+
+//     function selectItem(navItem) {
+//       self.selected = angular.isNumber(navItem) ? $scope.navItems[navItem] : navItem;
+//       if(self.selected === 1) {
         
 
-      }
-    }
+//       }
+//     }
 
-  }
-})();
+//   }
+// })();

@@ -10,7 +10,9 @@
       '$timeout',
       '$location',
       'nav',
-      function ($rootScope, $log, $state, $timeout, $location, nav) {
+      '$mdSidenav',
+      '$scope',
+      function ($rootScope, $log, $state, $timeout, $location, nav, $mdSidenav, $scope) {
 
         var vm = this;
 
@@ -18,6 +20,7 @@
         vm.toggleOpen = toggleOpen;
         vm.autoFocusContent = false;
         vm.nav = nav;
+        $scope.toggleLeft = buildToggler('left');
         // vm.toggleList = toggleNavList;
 
         vm.status = {
@@ -29,6 +32,11 @@
         //   $mdSidenav.toggle();
         // }
 
+        function buildToggler(componentId) {
+          return function() {
+            $mdSidenav(componentId).toggle();
+          };
+        }
 
 
         function isOpen(section) {
