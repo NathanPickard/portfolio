@@ -10,7 +10,7 @@
   <div layout="column">
 
   <div class="container" layout="row" flex>
-    <md-sidenav class="md-whiteframe-4dp" md-component-id="left" md-is-locked-open="$mdMedia('gt-xs')">
+    <md-sidenav class="md-whiteframe-4dp" id="sidenavigation" md-component-id="left" md-is-locked-open="$mdMedia('gt-xs')">
 
       <md-content role="navigation">
         <ul class="side-nav">
@@ -39,9 +39,11 @@
 
     </md-sidenav>
 
-  <md-content style="background-color: lightgray" flex>
-    <ui-view name="content"></ui-view>
-  </md-content>
-  </div>
+      <md-content style="background-color: lightgray" flex>
+       <ui-view name="content"></ui-view>
+      </md-content>
+      
+    </div>
+  
 
 </div>

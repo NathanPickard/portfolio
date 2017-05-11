@@ -10,7 +10,7 @@
 
       var sections = [{
         name: 'Home',
-        state: 'home',
+        state: 'home.home',
         type: 'link',
         icon: 'home'
       }];

@@ -34,11 +34,18 @@
         $stateProvider
           .state('home', {
             url: '/',
-
             views: {
               '@': {
                 templateUrl: 'components/home.html',
-                controller: 'HomeCtrl as vm'
+                controller: 'HomeCtrl as vm'                
+              }
+            }
+          })
+          .state('home.home', {
+            url: 'homepage',
+            views: {
+              'content@home': {
+                templateUrl: 'components/homepage.html'
               }
             }
           })

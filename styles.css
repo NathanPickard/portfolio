@@ -50,16 +50,18 @@ md-list-item > button {
   font-size: 4px;
 }*/
 
+#sidenavigation {
+  max-width: 270px;
+}
+
 .side-nav .md-button {
   text-align: left;
   font-size: 15px;
 }
 
 .side-nav .md-button > md-icon {
-  padding-right: 10px;
-  
+  padding-right: 10px;  
 }
-
 
 .side-nav .md-button.active {
   color: blue;
@@ -71,6 +73,13 @@ md-list-item > button {
 
 .externalLinks {
   background-color: lightgray;
+  /*max-width: 200px; */
+   
+}
+
+.externalLinks > a.md-button { 
+  /*background-color: pink;*/
+  min-width: 65px;
 }
 
 
@@ -116,10 +125,12 @@ md-list-item > button {
 #docs-nav-Portfolio li:first-child  {
   font-size: 5px;
   color: #dce775;
+  margin-left: -20px;
 }
 
 #docs-nav-Portfolio li:nth-child(2)  {
   color: #72d572;
+  margin-left: -20px;
 }
 
 #profile {
