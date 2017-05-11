@@ -8,6 +8,7 @@
         '  aria-expanded="{{isOpen()}}">\n' +
         '  <md-icon md-svg-src={{section.icon}}></md-icon>\n' +
         '  {{section.name}}\n' +
+        '  <span style="padding-left: 5px"</span>\n' +
         '  <span aria-hidden="true" class=" pull-right fa fa-chevron-down md-toggle-icon"\n' +
         '  ng-class="{\'toggled\' : isOpen()}"></span>\n' +
         '</md-button>\n' +
