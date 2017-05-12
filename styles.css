@@ -33,9 +33,6 @@ md-list-item > button {
   /*display: flex;*/
 /*}*/
 
-.md-toolbar-tools {
-  font-size: 35px;
-}
 
 .md-content ._md.flex {
   padding-left: 30px;
@@ -68,7 +65,18 @@ md-list-item > button {
 }
 
 .nav-toggle-list {
-  font-size:5px;
+  font-size: 5px;
+  background: #fff;
+  max-height: 300px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 0.1s cubic-bezier(0.35, 0, 0.25, 1);
+  -webkit-transition-property: max-height;
+  -moz-transition: 0.1s cubic-bezier(0.35, 0, 0.25, 1);
+  -moz-transition-property: max-height;
+  transition: 0.1s cubic-bezier(0.35, 0, 0.25, 1);
+  transition-property: max-height;
 }
 
 .externalLinks {
@@ -98,20 +106,6 @@ md-list-item > button {
   -webkit-transition: -webkit-transform .3s ease-in-out;
 }
 
-/*.nav-toggle-list {
-  background: #fff;
-  max-height: 300px;
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-  -webkit-transition: 0.75s cubic-bezier(0.35, 0, 0.25, 1);
-  -webkit-transition-property: max-height;
-  -moz-transition: 0.75s cubic-bezier(0.35, 0, 0.25, 1);
-  -moz-transition-property: max-height;
-  transition: 0.75s cubic-bezier(0.35, 0, 0.25, 1);
-  transition-property: max-height;
-}*/
-
 /*.side-nav .md-button > ul {
   
   font-size: px;
@@ -121,8 +115,24 @@ md-list-item > button {
   font-size: 5px;
 }*/
 
+.md-toolbar-tools {
+  font-size: 35px;
+  
+}
+
 .toolbarheader {
-  max-height: 80px;
+  max-height: 60px;
+  
+}
+
+#toolbar-top {
+  padding-left: 45px;
+  margin-top: -7px;
+  white-space: nowrap;  
+}
+
+.menu {
+  margin-right: -30px;
 }
 
 .md-subheader {
@@ -196,9 +206,6 @@ md-list-item > button {
   border-radius: 7%;
 }
 
-#toolbar-top {
-  padding-left: 25px;
-}
 
 #linkedincontact:hover {
   background-color: #0077B5; color: white;
