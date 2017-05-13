@@ -2,6 +2,7 @@
 
   angular.module('Portfolio', [
     'Portfolio.controllers',
+    'dynamicTabs',
     'ngAnimate',
     'ngAria',
     'ngMaterial',
@@ -23,7 +24,7 @@
 
       $mdThemingProvider.theme('default')
         .primaryPalette('blue')
-        .accentPalette('cyan');
+        .accentPalette('green');
     })
 
     .config(['$stateProvider', '$urlRouterProvider', '$logProvider',

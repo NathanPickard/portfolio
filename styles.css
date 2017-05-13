@@ -61,7 +61,11 @@ md-list-item > button {
 }
 
 .side-nav .md-button.active {
-  color: blue;
+  color: #2196F3;
+}
+
+.side-nav .md-button-toggle.active {
+  color: #2196F3;
 }
 
 .nav-toggle-list {
@@ -178,6 +182,10 @@ md-list-item > button {
 
 #profile {
   max-width: 250px;
+}
+
+#pagetitle {
+  padding-left: 30px;
 }
 
 #wikidietcard {
