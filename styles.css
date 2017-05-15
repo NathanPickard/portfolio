@@ -184,6 +184,11 @@ md-list-item > button {
   max-width: 250px;
 }
 
+#profile2 {
+  max-width: 400px;
+  padding: 20px;
+}
+
 #pagetitle {
   padding-left: 30px;
 }
@@ -193,12 +198,12 @@ md-list-item > button {
 }
 
 #wikidiet {
-  max-width: 225px;
+  max-width: 200px;
 }
 
 #foodcartfindercard {
-  background-color: #FF5722;
-
+  background-color: #0277BD;
+  color: #fff;
 }
 
 #foodcartfinder {
@@ -214,6 +219,40 @@ md-list-item > button {
   border-radius: 7%;
 }
 
+#bbcountercard {
+  background-color: #2196F3;
+  color: #fff;
+}
+
+#bbcounter {
+  max-width: 100px;
+  border-radius: 7%;
+}
+
+#nateswingscard {
+  background-color: #EF6C00;
+  color: #fff;
+}
+
+#nateswings {
+  max-width: 100px;
+}
+
+#timetrackercard {
+  background-color: #283593;
+  color: #fff;
+}
+
+#timetracker {
+  max-width: 225px;
+}
+#weekendbrunchfindercard {
+  background-color: #FF9800;
+}
+
+#weekendbrunchfinder {
+  max-width: 225px;
+}
 
 #linkedincontact:hover {
   background-color: #0077B5; color: white;
